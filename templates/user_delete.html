@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %} Qual usuário você pretende deletar ?{% endblock %}
+
+{% block content %}
+<form action="{{url_for('user_delete')}}" method="POST">
+    Digite o nome do usuário:<input type="text" name="user_nome">
+                             <input type="submit" value="Submit">
+
+
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} Testando template de banco de dados {% endblock %}
+
+{% block content %}
+
+<form action="{{url_for('user_create')}}" method="POST">
+    Digite seu username:<input type="text" name="username">
+    Digite sua idade:   <input type="text" name="age">
+    <p><input type="submit" value="Submit data"></p>
+
+</form>
+
+
+
+{% endblock %}
